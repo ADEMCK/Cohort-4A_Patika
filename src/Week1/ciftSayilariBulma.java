@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class ciftSayilariBulma {
     public static void main(String[] args) {
         int inputNumber;
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Bir sayı giriniz: ");
-        inputNumber = input.nextInt();
+        inputNumber = scanner.nextInt();
 
         // Bundan sonra yalnızca çift sayı basılacağını bildiğimiz için ön bilgiyi burada veriyoruz.
         System.out.println("Girdiğiniz sayıya kadar olan tüm çift sayılar: ");
@@ -20,9 +20,7 @@ public class ciftSayilariBulma {
             if (i % 2 == 0) {
                 System.out.println(i);
             }
-
         }
-
         //Bonus içerik. Patika ödevinde istenen fonksiyonu sonradan ekliyorum:
         int total = 0, counter = 0;
         for (int i = 0; i <= inputNumber; i++) {
