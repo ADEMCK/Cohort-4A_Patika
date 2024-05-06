@@ -1,14 +1,14 @@
 package week2.boxGame;
 
 public class Fighter {
-    // fields
+    // Değişkenler
     String name;
     int damage;
     int health;
     int weight;
     int dodge;
 
-    // constructor :
+    // Constructor metod
     public Fighter(String name, int damage, int health, int weight, int dodge) {
         this.name = name;
         this.damage = damage;
@@ -21,7 +21,7 @@ public class Fighter {
         }
     }
 
-    //
+    // Hasar alıp verme ya da bloklkama durumu
     public int hit(Fighter foe) {
         System.out.println(this.name + " => " + foe.name + " " + this.damage + "  hasar verdi.");
         if (foe.isDodge()) {
@@ -34,7 +34,7 @@ public class Fighter {
         return foe.health - this.damage;
     }
 
-    // random blocking
+    // Rastgele Bloklama
     public boolean isDodge() {
         // random number
         double randomNumberb = Math.random() * 100;

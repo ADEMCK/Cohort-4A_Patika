@@ -1,13 +1,13 @@
 package week2.boxGame;
 
 public class Match {
-    // variables :
+    // Değişkenler
     Fighter f1;
     Fighter f2;
     int minWeight;
     int maxWeight;
 
-    // constructor metot :
+    // Constructor metot :
     public Match(Fighter f1, Fighter f2, int minWeight, int maxWeight) {
         this.f1 = f1;
         this.f2 = f2;
@@ -15,7 +15,7 @@ public class Match {
         this.maxWeight = maxWeight;
     }
 
-    //  according to healt points control and
+    // Sağlık puanı kontrolü
     public void run() {
         if (isCheck()) {
             while (this.f1.health > 0 && this.f2.health > 0) {
@@ -36,7 +36,7 @@ public class Match {
             System.out.println("Sporcuların sikletleri uymuyor !");
         }
     }
-
+    // Kazananı belirleme
     public boolean isCheck() {
         return (this.f1.weight >= minWeight && this.f1.weight <= maxWeight) && (this.f2.weight >= minWeight && this.f2.weight <= maxWeight);
     }
@@ -54,7 +54,7 @@ public class Match {
         return false;
     }
 
-    // With %50 random chance for fighters
+    // Dövüşçüler için %50 rastgele şans ihtimali
     public void whichFighter() {
         if (Math.random() < 0.50) {
             System.out.println(this.f1.name + " ilk dövüşe başlıyor..");
