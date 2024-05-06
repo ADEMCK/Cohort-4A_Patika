@@ -58,15 +58,15 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee {" +
+        return "Employee " +
                 "Adı : '" + name + '\'' + "\n" +
-                ", Maaşı : " + salary + "\n" +
-                ", Çalışma Saati : " + workHours + "\n" +
+                ", Maaşı : " + salary + " TL \n" +
+                ", Çalışma Saati : " + workHours + " saat \n" +
                 ", Başlangıç yılı : " + hireYear + "\n" +
-                ", Vergi : " + tax() + "\n" +
-                ", Bonus : " + bonus() + "\n" +
-                ", Maaş Artışı : " + raiseSalary() + "\n" +
-                ", Vergi ve Bonuslar : " + taxAndBonusSalary() + "\n" +
+                ", Vergi : " + tax() + " TL  \n" +
+                ", Bonus : " + bonus() + " TL \n" +
+                ", Maaş Artışı : " + raiseSalary() + " TL \n" +
+                ", Vergi ve Bonuslar : " + taxAndBonusSalary() + " TL \n" +
                 ", Toplam Maaş : " + totalSalary() + " TL";
     }
 }

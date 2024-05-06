@@ -1,5 +1,7 @@
 package week2.maasHesaplama;
 
+// Maaş Hesaplama Ödevi
+
 public class maasHesaplama {
     public static void main(String[] args) {
 
