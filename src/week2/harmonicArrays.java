@@ -1,27 +1,24 @@
 package week2;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class harmonicArrays {
     public static void main(String[] args) {
-        // created an array with 5 elements
-        int[] array = new int[3];
-        // random class :
-        Random rnd = new Random();
-        // add elements into the array:
-        for (int i = 0; i < array.length; i++) {
-            array[i] = rnd.nextInt(20);
-        }
-        System.out.println("Arrays  = > " + Arrays.toString(array));
+        int[] numbers = {3, 6, 9, 12, 15, 25, 35, -45, 55, -65};
 
-        // harmonic average :
-        double result = 0;
-        for (int i = 0; i < array.length; i++) {
-            result += 1.0 / array[i];
+        // Dizinin eleman sayısını bulmak için dizinin lengthine eşitledik.
+        int arrayLength = numbers.length;
+        System.out.println("Eleman sayısı: " + arrayLength);
+
+        // Dizideki elemanları (1/a+1/b) şeklinde yazarak toplamını bulduk.
+        double sum = 0.0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += 1.0 / numbers[i];
         }
-        // array.length = n
-        double harmonicAverage = array.length + result;
-        System.out.print("Harmonic Average : " + harmonicAverage);
+        System.out.println("Harmonik seri formülüne göre toplamı: " + sum);
+
+        // Eleman sayısına toplamı bölerek harmonik ortalamayı bulduk.
+        double harmonicAvarage = arrayLength / sum;
+        System.out.println("Harmonik Ortalama: " + harmonicAvarage);
     }
 }
