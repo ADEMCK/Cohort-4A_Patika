@@ -1,4 +1,4 @@
-package week2;
+package Week2;
 
 public class palindromSayi {
     // Boolean değere sayının palindrom olup olmadığı atandı.

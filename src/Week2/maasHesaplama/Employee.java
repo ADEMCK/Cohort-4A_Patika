@@ -1,4 +1,4 @@
-package week2.maasHesaplama;
+package Week2.maasHesaplama;
 
 public class Employee {
     // Bu sınıflar, bir çalışanın adını, maaşını, günlük çalışma saatlerini, işe alındığı yılı ve mevcut yılı depolamak için kullanılır.

@@ -1,4 +1,4 @@
-package week2.boxGame;
+package Week2.boxGame;
 
 // Box Oyunu
 public class boxGame {

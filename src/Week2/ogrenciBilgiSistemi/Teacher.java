@@ -1,4 +1,4 @@
-package week2.ogrenciBilgiSistemi;
+package Week2.ogrenciBilgiSistemi;
 
 public class Teacher {
     // Değişkenler

@@ -1,4 +1,4 @@
-package week2;
+package Week2;
 
 public class bHarfi {
     public static void main(String[] args) {

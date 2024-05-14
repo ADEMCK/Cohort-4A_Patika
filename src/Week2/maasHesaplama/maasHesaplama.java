@@ -1,4 +1,4 @@
-package week2.maasHesaplama;
+package Week2.maasHesaplama;
 
 // Maaş Hesaplama Ödevi
 
