@@ -1,115 +1,29 @@
 package Week5.PatikaStore;
 
-public class MobilePhone {
+// Cep telefonu sınıfı, ürün sınıfından türetilmiştir
+public class MobilePhone extends Product {
+    private int batteryCapacityInMah; // Batarya kapasitesi (mAh)
+    private String color; // Cihaz rengi
 
-    int ID;
-    String productName;
-    String price;
-    String brand;
-    int storage;
-    double screen;
-    int camera;
-    double battery;
-    int ram;
-    String color;
-
-    public MobilePhone(int ID, String productName, String price, String brand, int storage, double screen, int camera, double battery, int ram, String color) {
-        this.ID = ID;
-        this.productName = productName;
-        this.price = price;
-        this.brand = brand;
-        this.storage = storage;
-        this.screen = screen;
-        this.camera = camera;
-        this.battery = battery;
-        this.ram = ram;
+    public MobilePhone(int id, double price, double discountRate, int stock, String name, Brand brand, int storage, int screenSize, int ram, int batteryCapacityInMah, String color) {
+        super(id, price, discountRate, stock, name, brand, storage, screenSize, ram);
+        this.batteryCapacityInMah = batteryCapacityInMah;
         this.color = color;
     }
 
-    //Get-Set Metotları
-    public int getID() {
-        return ID;
+    public MobilePhone() {
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public int getStorage() {
-        return storage;
-    }
-
-    public void setStorage(int storage) {
-        this.storage = storage;
-    }
-
-    public double getScreen() {
-        return screen;
-    }
-
-    public void setScreen(double screen) {
-        this.screen = screen;
-    }
-
-    public int getCamera() {
-        return camera;
-    }
-
-    public void setCamera(int camera) {
-        this.camera = camera;
-    }
-
-    public double getBattery() {
-        return battery;
-    }
-
-    public void setBattery(double battery) {
-        this.battery = battery;
-    }
-
-    public int getRam() {
-        return ram;
-    }
-
-    public void setRam(int ram) {
-        this.ram = ram;
+    public int getBatteryCapacityInMah() {
+        return batteryCapacityInMah;
     }
 
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    // Cep telefonu bilgilerini formatlı bir şekilde döndüren metot
     @Override
-    public String toString(){
-        return String.format("| %-2d | %-30s | %-9s | %-10s | %-6s GB| %-3s inch | %-3s MP | %-6s mAh | %-3s GB | %-6s |",ID,productName,price,brand,storage,screen,camera,battery,ram,color);
+    public String toString() {
+        return super.toString() + String.format(" %-5d mAh | %-12s |", batteryCapacityInMah, color);
     }
 }

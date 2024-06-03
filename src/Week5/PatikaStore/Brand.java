@@ -1,19 +1,26 @@
 package Week5.PatikaStore;
 
+// Marka sınıfı, ürünlerin marka bilgilerini tutar
 public class Brand {
 
-    private String name;
+    private final int id;
+    private final String name;
 
-    public Brand(String name) {
-        this.name = name;
-
+    public int getId () {
+        return id;
     }
 
-    public String getName() {
+    public String getName () {
         return name;
     }
 
-    public void setName(String name) {
+    public Brand (int id, String name) {
+        this.id = id;
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return id + ". " + name;
     }
 }

@@ -1,4 +1,4 @@
-package Week5;
+package Week5.TeknikIcerikIki;
 import java.util.Scanner;
 
 public class ArrayElementRetriever {
